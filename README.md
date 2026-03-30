@@ -1,30 +1,24 @@
-# Crown Framework - Built for Serious British Roleplay
+# Crown Framework
+Built for Serious British Roleplay
 
-Deployable txAdmin starter for Crown Framework.
+## Exact repo structure
+Put these files at the root of your GitHub repo:
 
-## Included
-- crown_core base resource
-- basic player bootstrap
-- UK-style job/permission model
-- callback system
+- recipe.yaml
+- server.cfg
+- README.md
+- sql/crown_framework.sql
+- resources/[crown]/crown_core/...
+
+Do not wrap them in another folder.
+
+## txAdmin recipe URL
+Use the RAW URL to `recipe.yaml`, for example:
+
+https://raw.githubusercontent.com/<your-user>/<your-repo>/main/recipe.yaml
+
+## Includes
+- crown_core
 - txAdmin recipe
-- SQL starter schema
-
-## Dependencies
-- oxmysql
-
-## Exports
-- GetPlayer(source)
-- GetPlayerByCitizenId(citizenId)
-- SetJob(source, jobName, grade)
-- HasPermission(source, permission)
-- client export: GetPlayerData()
-
-## Next build order
-1. crown_identity
-2. crown_banking
-3. crown_jobs
-4. crown_housing
-5. crown_business
-6. crown_vehicles
-7. crown_crime
+- SQL schema
+- server.cfg

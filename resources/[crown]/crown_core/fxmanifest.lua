@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 name 'crown_core'
-author 'OpenAI'
+author 'Matthew Hector'
 description 'Crown Framework core - built for serious british roleplay'
 version '0.1.0'
 
