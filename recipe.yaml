@@ -14,14 +14,14 @@ tasks:
     dest: ./tmp/crown_framework
 
   - action: move_path
-    src: ./tmp/crown_framework/crown_framework/resources/[crown]
+    src: ./tmp/crown_framework/resources/[crown]
     dest: ./resources/[crown]
 
   - action: copy_path
-    src: ./tmp/crown_framework/crown_framework/server.cfg
+    src: ./tmp/crown_framework/server.cfg
     dest: ./server.cfg
 
   - action: connect_database
 
   - action: query_database
-    file: ./tmp/crown_framework/crown_framework/sql/crown_framework.sql
+    file: ./tmp/crown_framework/sql/crown_framework.sql
