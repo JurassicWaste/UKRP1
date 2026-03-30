@@ -1,9 +1,6 @@
-$engine: 3
-$onesync: on
 name: Crown Framework
-version: 0.1.0
-author: OpenAI
-description: txAdmin deployable starter for Crown Framework, built for serious british roleplay.
+author: MaliciousHD
+description: Crown Framework - Built for Serious British Roleplay
 
 tasks:
   - action: download_github
@@ -11,15 +8,20 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/oxmysql
 
+  - action: download_github
+    src: https://github.com/JurassicWaste/UKRP1
+    ref: main
+    dest: ./tmp/crown_framework
+
   - action: move_path
-    src: ./tmp/crown_framework/resources/[crown]
+    src: ./tmp/crown_framework/crown_framework/resources/[crown]
     dest: ./resources/[crown]
 
   - action: copy_path
-    src: ./tmp/crown_framework/server.cfg
+    src: ./tmp/crown_framework/crown_framework/server.cfg
     dest: ./server.cfg
 
   - action: connect_database
 
   - action: query_database
-    file: ./tmp/crown_framework/sql/crown_framework.sql
+    file: ./tmp/crown_framework/crown_framework/sql/crown_framework.sql
